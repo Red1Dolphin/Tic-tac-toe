@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game));
             panel1 = new Panel();
             label1 = new Label();
             Exit = new Button();
@@ -51,7 +52,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(115, 1, 1);
+            panel1.BackColor = Color.Silver;
             panel1.Controls.Add(label1);
             panel1.Controls.Add(Exit);
             panel1.Dock = DockStyle.Top;
@@ -90,7 +91,7 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.SandyBrown;
+            button1.BackColor = Color.DimGray;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Arial Rounded MT Bold", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button1.Location = new Point(39, 31);
@@ -102,7 +103,7 @@
             // 
             // button2
             // 
-            button2.BackColor = Color.SandyBrown;
+            button2.BackColor = Color.DimGray;
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Arial Rounded MT Bold", 48F);
             button2.Location = new Point(235, 31);
@@ -114,7 +115,7 @@
             // 
             // button3
             // 
-            button3.BackColor = Color.SandyBrown;
+            button3.BackColor = Color.DimGray;
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Arial Rounded MT Bold", 48F);
             button3.Location = new Point(439, 31);
@@ -126,7 +127,7 @@
             // 
             // button4
             // 
-            button4.BackColor = Color.SandyBrown;
+            button4.BackColor = Color.DimGray;
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Arial Rounded MT Bold", 48F);
             button4.Location = new Point(39, 220);
@@ -138,7 +139,7 @@
             // 
             // button5
             // 
-            button5.BackColor = Color.SandyBrown;
+            button5.BackColor = Color.DimGray;
             button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Arial Rounded MT Bold", 48F);
             button5.Location = new Point(235, 220);
@@ -150,7 +151,7 @@
             // 
             // button6
             // 
-            button6.BackColor = Color.SandyBrown;
+            button6.BackColor = Color.DimGray;
             button6.FlatStyle = FlatStyle.Flat;
             button6.Font = new Font("Arial Rounded MT Bold", 48F);
             button6.Location = new Point(439, 220);
@@ -162,7 +163,7 @@
             // 
             // button7
             // 
-            button7.BackColor = Color.SandyBrown;
+            button7.BackColor = Color.DimGray;
             button7.FlatStyle = FlatStyle.Flat;
             button7.Font = new Font("Arial Rounded MT Bold", 48F);
             button7.Location = new Point(39, 423);
@@ -174,7 +175,7 @@
             // 
             // button8
             // 
-            button8.BackColor = Color.SandyBrown;
+            button8.BackColor = Color.DimGray;
             button8.FlatStyle = FlatStyle.Flat;
             button8.Font = new Font("Arial Rounded MT Bold", 48F);
             button8.Location = new Point(235, 423);
@@ -186,7 +187,7 @@
             // 
             // button9
             // 
-            button9.BackColor = Color.SandyBrown;
+            button9.BackColor = Color.DimGray;
             button9.FlatStyle = FlatStyle.Flat;
             button9.Font = new Font("Arial Rounded MT Bold", 48F);
             button9.Location = new Point(439, 423);
@@ -198,7 +199,7 @@
             // 
             // panel2
             // 
-            panel2.BackColor = Color.FromArgb(115, 1, 1);
+            panel2.BackColor = Color.Silver;
             panel2.Controls.Add(button9);
             panel2.Controls.Add(button8);
             panel2.Controls.Add(button7);
@@ -215,7 +216,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources._1;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(99, 258);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(391, 600);
@@ -225,7 +226,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = Properties.Resources._2;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(1425, 258);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(391, 600);
@@ -237,7 +238,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(179, 2, 19);
+            BackColor = Color.FromArgb(224, 224, 224);
             ClientSize = new Size(1942, 909);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);

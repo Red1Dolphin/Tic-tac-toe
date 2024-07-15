@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             Start = new Button();
             panel1 = new Panel();
             Exit = new Button();
@@ -42,12 +43,12 @@
             // 
             // Start
             // 
-            Start.BackColor = Color.FromArgb(166, 2, 2);
+            Start.BackColor = Color.Black;
             Start.Cursor = Cursors.Hand;
             Start.FlatAppearance.BorderColor = Color.Black;
             Start.FlatStyle = FlatStyle.Flat;
             Start.Font = new Font("Goudy Stout", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Start.ForeColor = Color.Black;
+            Start.ForeColor = Color.White;
             Start.Location = new Point(307, 286);
             Start.Name = "Start";
             Start.Size = new Size(196, 44);
@@ -59,7 +60,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(115, 1, 1);
+            panel1.BackColor = Color.Silver;
             panel1.Controls.Add(Exit);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
@@ -100,7 +101,7 @@
             // 
             Game_Name.Dock = DockStyle.Fill;
             Game_Name.Font = new Font("MV Boli", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Game_Name.ForeColor = Color.Crimson;
+            Game_Name.ForeColor = Color.White;
             Game_Name.Location = new Point(0, 0);
             Game_Name.Name = "Game_Name";
             Game_Name.Size = new Size(428, 84);
@@ -114,18 +115,19 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Script MT Bold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(546, 421);
+            label1.BackColor = Color.White;
+            label1.Font = new Font("Script MT Bold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(593, 419);
             label1.Name = "label1";
-            label1.Size = new Size(172, 20);
+            label1.Size = new Size(125, 22);
             label1.TabIndex = 4;
-            label1.Text = "Created by Red Dolphin";
+            label1.Text = "Created by Orca";
             label1.MouseDown += label1_MouseDown;
             label1.MouseMove += label1_MouseMove;
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.red_dolphin3;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(724, 396);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(47, 45);
@@ -139,7 +141,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(179, 2, 19);
+            BackColor = Color.FromArgb(224, 224, 224);
             ClientSize = new Size(783, 450);
             Controls.Add(pictureBox1);
             Controls.Add(label1);

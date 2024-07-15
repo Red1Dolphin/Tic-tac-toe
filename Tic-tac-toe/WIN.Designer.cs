@@ -42,7 +42,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(115, 1, 1);
+            panel1.BackColor = Color.LimeGreen;
             panel1.Controls.Add(label1);
             panel1.Location = new Point(202, 70);
             panel1.Name = "panel1";
@@ -52,6 +52,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.LimeGreen;
             label1.Dock = DockStyle.Fill;
             label1.Font = new Font("MS Gothic", 72F, FontStyle.Bold, GraphicsUnit.Point, 204);
             label1.Location = new Point(0, 0);
@@ -63,7 +64,7 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.FromArgb(255, 128, 0);
+            button1.BackColor = Color.LimeGreen;
             button1.Cursor = Cursors.Hand;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Castellar", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -77,7 +78,7 @@
             // 
             // button2
             // 
-            button2.BackColor = Color.FromArgb(255, 128, 0);
+            button2.BackColor = Color.LimeGreen;
             button2.Cursor = Cursors.Hand;
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Castellar", 13.8F, FontStyle.Bold);
@@ -113,13 +114,14 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(179, 2, 19);
+            BackColor = Color.LightGreen;
             ClientSize = new Size(800, 450);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(panel1);
+            ForeColor = Color.Yellow;
             FormBorderStyle = FormBorderStyle.None;
             Name = "WIN";
             StartPosition = FormStartPosition.CenterScreen;

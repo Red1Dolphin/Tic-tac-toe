@@ -42,10 +42,11 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.FromArgb(255, 128, 0);
+            button1.BackColor = Color.DimGray;
             button1.Cursor = Cursors.Hand;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Castellar", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.Black;
             button1.Location = new Point(314, 225);
             button1.Name = "button1";
             button1.Size = new Size(194, 61);
@@ -56,10 +57,11 @@
             // 
             // button2
             // 
-            button2.BackColor = Color.FromArgb(255, 128, 0);
+            button2.BackColor = Color.DimGray;
             button2.Cursor = Cursors.Hand;
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Castellar", 13.8F, FontStyle.Bold);
+            button2.ForeColor = Color.Black;
             button2.Location = new Point(314, 333);
             button2.Name = "button2";
             button2.Size = new Size(194, 61);
@@ -70,7 +72,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(115, 1, 1);
+            panel1.BackColor = Color.DimGray;
             panel1.Controls.Add(label1);
             panel1.Location = new Point(171, 51);
             panel1.Name = "panel1";
@@ -80,6 +82,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.DimGray;
             label1.Font = new Font("MS Gothic", 72F, FontStyle.Bold);
             label1.Location = new Point(101, 0);
             label1.Name = "label1";
@@ -111,13 +114,14 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(179, 2, 19);
+            BackColor = Color.FromArgb(224, 224, 224);
             ClientSize = new Size(800, 450);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(panel1);
             Controls.Add(button2);
             Controls.Add(button1);
+            ForeColor = Color.White;
             FormBorderStyle = FormBorderStyle.None;
             Name = "DRAW";
             StartPosition = FormStartPosition.CenterScreen;
