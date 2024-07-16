@@ -92,77 +92,156 @@ namespace Tic_tac_toe
             bool turn = false;
             while(!turn)
             {
-                int Numeric = rand.Next(1, 10);
-                switch (Numeric)
+                if(button1.Text == "X" && button2.Text == "X" && button3.Text == "") 
                 {
-                    case 1:
-                        if (button1.Text == "")
-                        {
-                            button1.Text = "O";
-                            turn = true;
-                        }
-                        break;
-                    case 2:
-                        if (button2.Text == "")
-                        {
-                            button2.Text = "O";
-                            turn = true;
-                        }
-                        break;
-                    case 3:
-                        if (button3.Text == "")
-                        {
-                            button3.Text = "O";
-                            turn = true;
-                        }
-                        break;
-                    case 4:
-                        if (button4.Text == "")
-                        {
-                            button4.Text = "O";
-                            turn = true;
-                        }
-                        break;
-                    case 5:
-                        if (button5.Text == "")
-                        {
-                            button5.Text = "O";
-                            turn = true;
-                        }
-                        break;
-                    case 6:
-                        if (button6.Text == "")
-                        {
-                            button6.Text = "O";
-                            turn = true;
-                        }
-                        break;
-                    case 7:
-                        if (button7.Text == "")
-                        {
-                            button7.Text = "O";
-                            turn = true;
-                        }
-                        break;
-                    case 8:
-                        if (button8.Text == "")
-                        {
-                            button8.Text = "O";
-                            turn = true;
-                        }
-                        break;
-                    case 9:
-                        if (button9.Text == "")
-                        {
-                            button9.Text = "O";
-                            turn = true;
-                        }
-                        break;
+                    button3.Text = "O";
+                    turn = true;
                 }
-            }
-            
-
-          
+                else if (button1.Text == "" && button2.Text == "X" && button3.Text == "X")
+                {
+                    button1.Text = "O";
+                    turn = true;
+                }
+                else if (button4.Text == "" && button5.Text == "X" && button6.Text == "X")
+                {
+                    button4.Text = "O";
+                    turn = true;
+                }
+                else if (button4.Text == "X" && button5.Text == "X" && button6.Text == "")
+                {
+                    button6.Text = "O";
+                    turn = true;
+                }
+                else if (button7.Text == "X" && button8.Text == "X" && button9.Text == "")
+                {
+                    button9.Text = "O";
+                    turn = true;
+                }
+                else if (button7.Text == "" && button8.Text == "X" && button9.Text == "X")
+                {
+                    button7.Text = "O";
+                    turn = true;
+                }
+                else if (button1.Text == "" && button4.Text == "X" && button7.Text == "X")
+                {
+                    button1.Text = "O";
+                    turn = true;
+                }
+                else if (button1.Text == "X" && button4.Text == "X" && button7.Text == "")
+                {
+                    button7.Text = "O";
+                    turn = true;
+                }
+                else if (button2.Text == "X" && button5.Text == "X" && button8.Text == "")
+                {
+                    button8.Text = "O";
+                    turn = true;
+                }
+                else if (button2.Text == "" && button5.Text == "X" && button8.Text == "X")
+                {
+                    button2.Text = "O";
+                    turn = true;
+                }
+                else if (button3.Text == "" && button6.Text == "X" && button9.Text == "X")
+                {
+                    button3.Text = "O";
+                    turn = true;
+                }
+                else if (button3.Text == "X" && button6.Text == "X" && button9.Text == "")
+                {
+                    button9.Text = "O";
+                    turn = true;
+                }
+                else if (button1.Text == "X" && button5.Text == "X" && button9.Text == "")
+                {
+                    button9.Text = "O";
+                    turn = true;
+                }
+                else if (button1.Text == "" && button5.Text == "X" && button9.Text == "X")
+                {
+                    button1.Text = "O";
+                    turn = true;
+                }
+                else if (button3.Text == "" && button5.Text == "X" && button7.Text == "X")
+                {
+                    button3.Text = "O";
+                    turn = true;
+                }
+                else if (button3.Text == "X" && button5.Text == "X" && button7.Text == "")
+                {
+                    button7.Text = "O";
+                    turn = true;
+                }
+                else
+                {
+                    switch (rand.Next(1, 10))
+                    {
+                        case 1:
+                            if (button1.Text == "")
+                            {
+                                button1.Text = "O";
+                                turn = true;
+                            }
+                            break;
+                        case 2:
+                            if (button2.Text == "")
+                            {
+                                button2.Text = "O";
+                                turn = true;
+                            }
+                            break;
+                        case 3:
+                            if (button3.Text == "")
+                            {
+                                button3.Text = "O";
+                                turn = true;
+                            }
+                            break;
+                        case 4:
+                            if (button4.Text == "")
+                            {
+                                button4.Text = "O";
+                                turn = true;
+                            }
+                            break;
+                        case 5:
+                            if (button5.Text == "")
+                            {
+                                button5.Text = "O";
+                                turn = true;
+                            }
+                            break;
+                        case 6:
+                            if (button6.Text == "")
+                            {
+                                button6.Text = "O";
+                                turn = true;
+                            }
+                            break;
+                        case 7:
+                            if (button7.Text == "")
+                            {
+                                button7.Text = "O";
+                                turn = true;
+                            }
+                            break;
+                        case 8:
+                            if (button8.Text == "")
+                            {
+                                button8.Text = "O";
+                                turn = true;
+                            }
+                            break;
+                        case 9:
+                            if (button9.Text == "")
+                            {
+                                button9.Text = "O";
+                                turn = true;
+                            }
+                            break;
+                    }
+                }            
+            } 
         }
 
         public Game()
